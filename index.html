@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make Your Best Team</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header section start  -->
+    <header>
+      <section class="header_section">
+        <h1 class="heading">Select Your Best Team</h1>
+        <p class="heading_details">
+          You choose a football team. Which team will be the best team with
+          world class players. Who will give you a strong team with potential.
+          So why the delay? Build your dream football team.
+        </p>
+      </section>
+    </header>
+    <!-- header section end  -->
+    <!-- main section start  -->
+    <main>
+      <section class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+              <div class="col">
+                <div style="background-color: #000000" class="card">
+                  <img src="images/card-1.png" class="card-img-top" alt="..." />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-light">Lionel Messi</h5>
+                    <h6 class="text-secondary mb-3">36 Goals . 120 Assist</h6>
+                    <button class="btn btn-primary select_btn">SELECT</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div style="background-color: #000000" class="card">
+                  <img src="images/card-2.png" class="card-img-top" alt="..." />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-light">Neymar Jr</h5>
+                    <h6 class="text-secondary mb-3">50 Goals . 90 Assist</h6>
+                    <button class="btn btn-primary select_btn">SELECT</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div style="background-color: #000000" class="card">
+                  <img src="images/card-3.png" class="card-img-top" alt="..." />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-light">Kylian Mbappé</h5>
+                    <h6 class="text-secondary mb-3">30 Goals . 50 Assist</h6>
+                    <button class="btn btn-primary select_btn">SELECT</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div style="background-color: #000000" class="card">
+                  <img src="images/card-4.png" class="card-img-top" alt="..." />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-light">Vítor Machado</h5>
+                    <h6 class="text-secondary mb-3">20 Goals . 40 Assist</h6>
+                    <button class="btn btn-primary select_btn">SELECT</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div style="background-color: #000000" class="card">
+                  <img src="images/card-5.png" class="card-img-top" alt="..." />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-light">Sergio Ramos</h5>
+                    <h6 class="text-secondary mb-3">320 Goals . 70 Assist</h6>
+                    <button class="btn btn-primary select_btn">SELECT</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div style="background-color: #000000" class="card">
+                  <img src="images/card-6.png" class="card-img-top" alt="..." />
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-light">Renato Sanches</h5>
+                    <h6 class="text-secondary mb-3">10 Goals . 20 Assist</h6>
+                    <button class="btn btn-primary select_btn">SELECT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div style="background-color: #000000" class="card">
+              <div class="card-body">
+                <h4 class="text-light">Selected - V</h4>
+                <div class="text-light list">
+                  <ol id="order_list" type="1"></ol>
+                </div>
+              </div>
+            </div>
+            <div style="background-color: #000000" class="card">
+              <div class="card-body">
+                <h4 class="text-light">Budget</h4>
+                <div
+                  class="d-md-flex justify-content-between align-items-center"
+                >
+                  <p class="text-light mt-3">Per player</p>
+                  <input
+                    id="budget_input_field"
+                    class="py-1 rounded text-light bg-dark border border-light"
+                    type="text"
+                  />
+                </div>
+                <br />
+                <button
+                  id="budget_calculate"
+                  class="fw-bolder btn btn-primary px-5"
+                >
+                  Calculate
+                </button>
+              </div>
+              <div class="card-body">
+                <h4 class="text-light">
+                  Player expenses: <span id="display_budget"></span>
+                </h4>
+                <div
+                  class="d-md-flex justify-content-between align-items-center"
+                >
+                  <p class="text-light mt-3">Manager</p>
+                  <input
+                    id="manager_budget"
+                    class="py-1 rounded text-light bg-dark border border-light"
+                    type="text"
+                  />
+                </div>
+                <div
+                  class="d-md-flex justify-content-between align-items-center"
+                >
+                  <p class="text-light mt-3">Coach</p>
+                  <input
+                    id="coach_budget"
+                    class="py-1 rounded text-light bg-dark border border-light"
+                    type="text"
+                  />
+                </div>
+                <br />
+                <button id="total_price" class="fw-bolder btn btn-primary px-3">
+                  Calculate Total
+                </button>
+                <br />
+                <div>
+                  <h4 class="text-light mt-5">
+                    Total: <span id="total_amount"></span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main section end  -->
+    <footer>
+      <section class="text-center text-light">
+        <p>
+          © 2022 || All Rights Reserved by
+          <span class="fst-italic">Maruf Billah</span>
+        </p>
+      </section>
+    </footer>
+    <script src="./JS/app.js"></script>
+  </body>
+</html>

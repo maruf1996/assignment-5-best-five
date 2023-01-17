@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212529;
+}
+.header_section {
+  width: 50%;
+  margin: 4.5rem auto;
+  text-align: center;
+}
+.heading {
+  font-family: "Berkshire Swash";
+  color: #ff5e19;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.heading_details {
+  color: gray;
+  font-size: 1.1rem;
+}
+footer {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+#total_price,
+#budget_calculate {
+  float: right;
+}
+
+.select_btn {
+  padding: 0.3rem 2.8rem;
+}
+
+h4 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.list {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 688px) {
+  body,
+  section,
+  div {
+    background-color: #212529;
+  }
+  .header_section {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 2rem 0;
+  }
+  .heading {
+    font-size: 2.1rem;
+  }
+  .heading_details {
+    text-align: justify;
+  }
+  footer {
+    margin-top: 2rem;
+  }
+  h4 {
+    text-align: start;
+    margin: 0 0;
+  }
+  #total_price,
+  #budget_calculate {
+    float: left;
+  }
+  .card h6 {
+    font-size: 0.7rem;
+  }
+  .card h5 {
+    font-size: 1rem;
+  }
+  .select_btn {
+    padding: 0.3rem 1.5rem;
+  }
+  .list {
+    margin-top: 0.8rem;
+    margin-left: -16px;
+  }
+}
